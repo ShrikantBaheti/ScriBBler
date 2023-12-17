@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+</head>
+
+<body>
+
+    <section class="s1">
+        <div class="one">
+            <h1>ScriBBler</h1>
+            <h2>Explore, Imagine, Create</h2>
+        </div>
+
+        <div class="two">
+
+            <button class="btn01" id="signupIn" onclick="openSignIn()">Sing In</button>
+            <button class="btn01" id="signupBtn" onclick="openSignUp()">Sing Up</button>
+
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="three">
+
+            <a href="html/postslist.html"><button class="btn01">All Post</button></a>
+            <button class="btn01" id="createpost" onclick="openCreatePost()">Create Post</button>
+
+        </div>
+    </section>
+
+    <div class="overlay" id="signupOverlay">
+        <div class="popup">
+            <h2>Get Started</h2>
+            <br>
+            <form action="" class="form1">
+                <label for="">Name</label>
+                <br>
+                <input type="text" placeholder="Enter Your Name">
+                <br><br>
+                <label for="">Email</label>
+                <br>
+                <input type="email" placeholder="Enter Your email">
+                <br><br>
+                <label for="">Password</label>
+                <br>
+                <input type="password" placeholder="Enter Your Password">
+                <br><br>
+                <label for="">Confirm password</label>
+                <br>
+                <input type="password" placeholder="Enter Your Password Again">
+                <br><br>
+                <button>Sign Up</button>
+                <br><br>
+                <p>Already Have An Account?
+                    <a href="" style="text-decoration: none;"> Sign In </a>
+                </p>
+            </form>
+            <br><br>
+            <button id="closeBtn" class="btn1" onclick="closeSignUp()">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="signinOverlay">
+        <div class="popup">
+            <form action="" class="form1">
+                <label for="">Username</label>
+                <br>
+                <input type="text" placeholder="Enter Your UserName">
+                <br><br>
+                <label for="">Password</label>
+                <br>
+                <input type="password" placeholder="Enter Your Password">
+                <br><br>
+                <button>Sign In</button>
+                <br><br>
+                <p>Not a member ?
+                    <a href="" style="text-decoration: none;"> Sign Up </a>
+                </p>
+            </form>
+            <br><br>
+            <button id="closeBtn1" class="btn1" onclick="closeSignIn()">Close</button>
+        </div>
+    </div>
+    <div class="overlay" id="createPostOverlay">
+        <div class="popup">
+            <h2>Create Post</h2>
+            <br>
+            <form action="" class="form2" id="postForm">
+                <label for="postTitle">Title</label><br>
+                <input type="text" id="postTitle" name="postTitle" placeholder="Enter title of your post" required><br><br>
+
+                <label for="postContent">Contents</label><br>
+                <textarea id="postContent" name="postContent" cols="30" rows="10" placeholder="Enter the contents of your post" required></textarea><br><br>
+
+                <button type="submit">Create</button>
+            </form>
+            <br><br>
+            <button id="closeBtnPost" class="btn1" onclick="closeCreatePost()">Close</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="../Upgrad Project/js/index.js"></script>
+    <script src="../Upgrad Project/js/common.js"></script>
+
+
+
+</body>
+
+</html>

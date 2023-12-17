@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* Ensures padding and border don't affect element width */
+}
+
+body {
+    background-color: #ffeedd;
+}
+
+.cardview {
+    display: flex;
+    flex-direction: column;
+    /* Ensures child elements stack vertically */
+    width: 80%;
+    /* Set the desired width */
+    margin: 5% auto;
+    /* Centers the cardview horizontally */
+}
+
+.cardview .one {
+    background-color: white;
+    padding: 3%;
+    border-radius: 8px;
+    /* Add border-radius for better appearance */
+    margin-bottom: 10px;
+    /* Creates spacing between .one and .two */
+}
+
+.cardview .two {
+    background-color: gray;
+    padding: 2%;
+    border-radius: 8px;
+    /* Add border-radius for better appearance */
+}
+
+.cardview .two p {
+    margin-top: 15px;
+    text-align: justify;
+    max-height: 4 * 1.2em;
+    /* Four lines, assuming 1.2em line-height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* Limit to four lines */
+    -webkit-box-orient: vertical;
+}
+
+.allcardview {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.allcardview .cardview .two h4 span {
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.allcardview .cardview .two p {
+    margin-top: 15px;
+    text-align: justify;
+    overflow-wrap: break-word;
+    /* Ensures long words wrap instead of overflowing */
+}

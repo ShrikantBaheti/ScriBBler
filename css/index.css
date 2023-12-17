@@ -1,0 +1,108 @@
+body {
+    background-image: url(../img/bgimage.jpg);
+    background-size: cover;
+}
+
+.s2 {
+    text-align: center;
+    margin-top: 17%;
+}
+
+.s2 .three .btn01 {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup1 {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.form1 label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form1 button {
+    color: white;
+    padding: 2%;
+    background-color: green;
+    width: 80%;
+}
+
+.btn1 {
+    color: white;
+    padding: 2%;
+    background-color: red;
+    width: 60%;
+}
+
+.overlay1 button {
+    color: white;
+    padding: 10px;
+    background-color: red;
+    width: 10%;
+}
+
+.form2 label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form2 input {
+    padding: 10px;
+    margin: 1%;
+    width: 70%;
+}
+
+.form2 textarea {
+    padding: 10px;
+    margin: 1%;
+    width: 70%;
+}
+
+.form2 button {
+    color: white;
+    padding: 10px;
+    background-color: green;
+    width: 10%;
+}
